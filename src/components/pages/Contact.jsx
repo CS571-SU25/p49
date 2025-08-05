@@ -1,8 +1,16 @@
+import { Button } from "react-bootstrap"
 import PageNavbar from "../PageNavbar"
+import { useState } from "react"
+import ContactForm from "../ContactForm";
 
 export default function Contact() {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
     return <div>
-        <PageNavbar/>
-        <h3>Webpage in progress</h3>
+        <h1>Contact Me About Anything!</h1>
+        <ContactForm/>
     </div>
 }
